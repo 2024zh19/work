@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>secondwork</title>
+    <style>
+	   body{
+			font-family: "SIMYOU" , "youyuan" , sans-serif;
+		}
+	  .biaoge {
+        position: relative;
+        height: 1416px;
+        width: 1003px;
+        text-align: center;
+        color: aquamarine;
+      }
+      .biaoge::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(HReTqqDa8AAImxA.jpg);
+        background-size: cover;
+        opacity: 0.8;
+        z-index: -1;
+      }
+      .yijibiaoti {
+        font-size: 100px;
+        padding-top: 50px;
+        margin: 0;
+      }
+      .erjibiaoti {
+        font-size: 50px;
+        color: aqua;
+      }
+      .sanjibiaoti {
+        font-size: 50px;
+        color:#005755;
+      }
+      .zhengwen input{
+        font-size: 25px;
+        font-weight: 505;
+		height: 50px;
+		width: 250px;
+		padding: 0 10px;
+		box-sizing: border-box;
+		vertical-align: middle;
+		border: 1px solid #CCCCCC;
+		border-radius: 5px;
+		outline: none;
+        color: black;
+      }
+		.zhengwen{
+		font-size: 25px;
+        font-weight: 505;
+		color: black;
+		}
+    </style>
+  </head>
+  <body>
+    <div class="biaoge">
+      <h1 class="yijibiaoti">满意度调查问卷</h1>
+      <form action="next.html" method="get">
+        <p class="erjibiaoti">
+          &nbsp;&nbsp;这是一个调查问卷，请填写你的个人信息，我们要对你开展大调查了&nbsp;&nbsp;
+        </p>
+        <div style="padding-bottom: 50px; padding-top: 50px">
+          <p class="zhengwen">姓名&nbsp;&nbsp;<input type="text" name="username" required minlength="2" maxlength="6" pattern="^[\u4e00-\u9fa5·]{2,6}" title="请输入姓名！"/></p>
+          <p class="zhengwen">学号&nbsp;&nbsp;<input type="password" name="ID" maxlength="10" minlength="10" required /></p>
+        </div>
+        <input style="font-size: 25px" type="submit" value="登录" />
+        <p class="sanjibiaoti">登录后查看完整信息<br>对于询问的情况请如实说明</p>
+      </form>
+    </div>
+  </body>
+</html>

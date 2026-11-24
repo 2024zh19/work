@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>next</title>
+<style>
+	.biaoge {
+        position: relative;
+        height: 3840px;
+        width: 2160px;
+        text-align: center;
+        color: aquamarine;
+      }
+      .biaoge::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("1000046810.png");
+        background-size: cover;
+        opacity: 0.8;
+        z-index: -1;
+      }
+	  .yiji{
+		font-size: 120px;
+		padding-top: 100px;
+		text-align: center;
+		color: cadetblue;
+	  }
+	  .erji{
+		font-size: 80px;
+		color: black;
+	  }
+	  .xuanze{
+		text-align: center;  
+	  }
+	  input[type="radio"]{
+		  transform: scale(5.0);
+		  margin-right: 40px;
+		  vertical-align: middle;
+	  }
+	  input[type="checkbox"]{
+		  transform: scale(5.0);
+		  margin-right: 40px;
+		  vertical-align: middle;
+	  }
+	  select{
+		  font-size: 60px;
+		  height: 100px;
+		  width: 400px;
+		  padding: 0 10px;
+		  border-radius: 5px;
+	}
+	  textarea{
+		  font-size: 60px;
+		  height: 100px;
+		  width: 400px;
+		  padding: 0 10px;
+		  border-radius: 5px;
+	}
+	  input[type="submit"]{
+		  font-size: 60px;
+		  height: 120px;
+		  width: 200px;
+		  margin-top: 100px;
+		  text-align: center;
+		  border-radius: 5px;
+	}	
+	</style>
+</head>
+<body>
+	<div class="biaoge">
+	<h1 class="yiji">好了，现在我们要询问你一些问题，并决定是否开展大调查</h1>
+	<form>
+		<p class="erji">1.您的满意度&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="choose">满意&nbsp;&nbsp;<input type="radio" name="choose">不满意</p>
+		<p class="erji">2.您偏好的温度&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">冰冰冰&nbsp;&nbsp;<input type="checkbox">少冰&nbsp;&nbsp;<input type="checkbox">常温&nbsp;&nbsp;<input type="checkbox">温&nbsp;&nbsp;<input type="checkbox">热</p>
+		<p class="erji">3.您更喜欢哪种甜度？</p>
+		<select>
+			<option class="xuanze">-请选择-</option>
+			<option class="xuanze">全糖</option>
+			<option class="xuanze">七分糖</option>
+			<option class="xuanze">三分糖</option>
+			<option class="xuanze">不额外加糖</option>
+			</select>
+		<p class="erji">4.请为我们提出建议&nbsp;&nbsp;</p>
+		<textarea name="jinwan" rows="5" cols="30" placeholder="请输入文本"></textarea><br>
+		<input type="submit" value="提交" />
+		</form>
+	</div>
+</body>
+</html>
